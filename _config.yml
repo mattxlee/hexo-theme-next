@@ -11,10 +11,10 @@
 
 # Allow to cache content generation.
 cache:
-  enable: true
+  enable: false
 
 # Remove unnecessary files after hexo generate.
-minify: false
+minify: true
 
 # Define custom file paths.
 # Create your custom files in site directory `source/_data` and uncomment needed files below.
@@ -29,21 +29,6 @@ custom_file_path:
   #variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
   #style: source/_data/styles.styl
-
-
-# ---------------------------------------------------------------
-# Scheme Settings
-# ---------------------------------------------------------------
-
-# Schemes
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
-#scheme: Gemini
-
-# Dark Mode
-darkmode: false
-
 
 # ---------------------------------------------------------------
 # Site Information Settings
@@ -142,8 +127,7 @@ menu:
   home: / || fa fa-medkit
   #about: /about/ || fa fa-unlock
   #tags: /tags/ || fa fa-tags
-  #categories: /categories/ || fa fa-th
-  #archives: /archives/ || fa fa-archive
+  archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
@@ -236,46 +220,6 @@ toc:
   expand_all: false
   # Maximum heading depth of generated toc.
   max_depth: 6
-
-
-# ---------------------------------------------------------------
-# Footer Settings
-# See: https://theme-next.js.org/docs/theme-settings/footer
-# ---------------------------------------------------------------
-
-# Show multilingual switcher in footer.
-language_switcher: false
-
-footer:
-  # Specify the year when the site was setup. If not defined, current year will be used.
-  #since: 2021
-
-  # Icon between year and copyright info.
-  icon:
-    # Icon name in Font Awesome. See: https://fontawesome.com/icons
-    name: fa fa-heart
-    # If you want to animate the icon, set it to true.
-    animated: false
-    # Change the color of icon, using Hex Code.
-    color: "#ff0000"
-
-  # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright:
-
-  # Powered by Hexo & NexT
-  powered: true
-
-  # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
-  beian:
-    enable: false
-    icp:
-    # The digit in the num of gongan beian.
-    gongan_id:
-    # The full num of gongan beian.
-    gongan_num:
-    # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
-    gongan_icon_url:
-
 
 # ---------------------------------------------------------------
 # Post Settings
@@ -884,7 +828,7 @@ mermaid:
 # Use Animate.css to animate everything.
 # For more information: https://animate.style
 motion:
-  enable: true
+  enable: false
   async: false
   transition:
     # All available transition variants: https://theme-next.js.org/animate/
@@ -898,10 +842,10 @@ motion:
 # Progress bar in the top during page loading.
 # For more information: https://github.com/CodeByZach/pace
 pace:
-  enable: false
+  enable: true
   # All available colors:
   # black | blue | green | orange | pink | purple | red | silver | white | yellow
-  color: blue
+  color: orange
   # All available themes:
   # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
   # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
